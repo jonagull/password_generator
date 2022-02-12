@@ -7,7 +7,11 @@ const pw4 = document.getElementById("password4")
 function makePw() {
     const pwdChars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     const pwdLen = 15;
-    return randPassword = Array(pwdLen).fill(pwdChars).map(function(x) { return x[Math.floor(Math.random() * x.length)] }).join('');
+    return randPassword = Array(pwdLen)
+                            .fill(pwdChars)
+                            .map(function(x) { 
+                                return x[Math.floor(Math.random() * x.length)] })
+                                .join('');
 }
 
 
